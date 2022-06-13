@@ -1,0 +1,6 @@
+<start> -> <phrase>!
+<phrase> -> <A> | <B> | <C>
+<A> -> hello <Name>'s world
+<B> -> hello there, <Name>
+<C> -> hello <Name>, <A> | <A>, hello <Name>
+<Name> -> Damy | Alaa | Bobby

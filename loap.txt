@@ -1,0 +1,32 @@
+<section> -> <sentence> <section> | <sentence>
+<sentence> -> Variable <ident> : <type> . | Variables <identsandtype> . | Definition <ident> <abstraction> . | Lemma <ident> : <formula> . | Theorem <ident> : <formula> . | Axiom <ident> : <formula> . | Hypothesis <ident> : <formula> .
+<identsandtype> -> <idents> : <type>
+<idents> -> <ident> | <ident> <idents>
+<abstraction> -> := <formula>
+<formula> -> <equivalence>
+<equivalence> -> <implication> | <equivalence> <equivalencesymbol> <implication>
+<implication> -> <disjunction> | <disjunction> <implicationsymbol> <implication>
+<disjunction> -> <conjunction> | <conjunction> <orsymbol> <disjunction>
+<conjunction> -> <negation> | <negation> <andsymbol> <conjunction>
+<negation> -> <comparison> | <notsymbol> <negation>
+<comparison> -> <sum>
+<sum> -> <product>
+<product> -> <negative>
+<negative> -> <power>
+<power> -> <term>
+<term> -> <value>
+<value> -> <ident> | ( <formula> )
+<type> -> <basictype>
+<basictype> -> <booleansymbol>
+<digit> -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+<ident> -> <firstcharacter> | <firstcharacter><etcetera>
+<firstcharacter> -> _ | <letter>
+<letter> -> a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
+<etcetera> -> <subsequentcharacter> | <subsequentcharacter><etcetera>
+<subsequentcharacter> -> ' | <firstcharacter> | <digit>
+<equivalencesymbol> -> ⟷
+<implicationsymbol> -> →
+<orsymbol> -> \/
+<andsymbol> -> /\
+<notsymbol> -> ~
+<booleansymbol> -> Prop
