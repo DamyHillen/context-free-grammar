@@ -3,4 +3,4 @@
 <A> -> hello <Name>'s world
 <B> -> hello there, <Name>
 <C> -> hello <Name>, <A> | <A>, hello <Name>
-<Name> -> Damy | Alaa | Bobby
+<Name> -> Damy | Jort | Pip
